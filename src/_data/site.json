@@ -1,0 +1,11 @@
+{
+    "name": "Home",
+    "description": "Eleventy basic template to start a new project",
+    "authorName": "Michel Maillard",
+    "authorUrl": "https://michelmaillard.ch/",
+    "github": "https://github.com/mobile-michel/1d-basic-simple",
+    "favicon": "https://11ty.recipes/images/meta/favicon.svg",
+    "cdn": "https://cdn.simplecss.org/simple.min.css",
+    "stylesheet": "/assets/css/simple.css",
+    "backgroundImage": ""
+}
