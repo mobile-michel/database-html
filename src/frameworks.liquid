@@ -1,0 +1,18 @@
+---
+title: HTML in frameworks
+description: The HTML in frameworks
+layout: base
+tags: primary
+date: 2024-01-05
+---
+
+{% assign list = html | map: 'periodic-table' | uniq %}
+{% for item in list %}
+<h2>{{item | capitalize }}</h2>
+{% assign elements = html | where: "periodic-table", item | sort: 'frameworks' | reverse %}
+<ul>
+    {% for item in elements %}
+    <li><strong>{{item.name}}</strong> : {{item.description}}<br>Number of appareances: {{item.frameworks}}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
