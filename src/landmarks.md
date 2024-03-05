@@ -1,12 +1,12 @@
 ---
-title: Landmarks
-description: ARIA landmarks example
+title: Sectioning elements
+description: ARIA landmarks & other HTML sectioning elements
 link: https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/HTML5.html
 layout: base
 tags: primary
 ---
 
-## HTML Sectioning Elements
+## With ARIA landmarks
 
 ### `Header`
 - default landmark role: `banner` (when in context of the `body` element)
@@ -42,11 +42,11 @@ tags: primary
 
 ## Others HTML Sectioning Elements
 
+### `Body`
+- document body
+
+### `Address`
+- contact information for a page or article
+
 ### `Article`
 - content: forum posts, blog posts, user comments, product cards, newspaper articles
-
-### `Figure`
-- content: illustrations, diagrams, photos, codelisting
-
-### `Figcaption`
-- defines a caption for a figure

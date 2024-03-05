@@ -9,7 +9,7 @@ tags: primary
 ## Main Content Categories
 - metadata content: inside `<head>`
 - flow content: inside `<body>`
-- sectioning conetn: `<article> <aside> <nav> <section>`
+- sectioning content: `<article> <aside> <nav> <section>`
 - heading content: `<h1> to <h6>`
 - phrasing content: `<code> <label> <mark>`, etc...
 - embedded content: `<audio> <img> <object>`, etc...
