@@ -1,7 +1,8 @@
-<header style="background-image: url({{ site.backgroundImage }}); background-size: cover">
+<header>
   <nav>
     <ul>
-      {% for nav in collections.primary reversed %}
+      <li><a href="/">Home</a></li>
+      {% for nav in collections.primary %}
         <li {% if page.url == nav.url %}class="current"{% endif %}>
           <a href="{{ nav.url }}">{{ nav.data.title }}</a>
         </li>

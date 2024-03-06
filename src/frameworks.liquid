@@ -1,18 +1,20 @@
 ---
-title: HTML in frameworks
+title: Frameworks
 description: The HTML in frameworks
-layout: base
+layout: default
 tags: primary
-date: 2024-01-05
+date: 2024-01-11
 ---
-
 {% assign list = html | map: 'periodic-table' | uniq %}
 {% for item in list %}
 <h2>{{item | capitalize }}</h2>
 {% assign elements = html | where: "periodic-table", item | sort: 'frameworks' | reverse %}
 <ul>
     {% for item in elements %}
-    <li><strong>{{item.name}}</strong> : {{item.description}}<br>Number of appareances: {{item.frameworks}}</li>
+        {% if item.frameworks > 2 %}
+    <li><strong>{{item.name}}</strong> : {{item.description}}<br>
+        frameworks: <em>{% if item.bahunya %}Bahunya, {% endif %}{% if item.classless %}Classless, {% endif %}{% if item.mvp %}MVP, {% endif %}{% if item.pico %}Pico, {% endif %}{% if item.simple %}Simple{% endif %}</em></li>
+    {% endif %}
     {% endfor %}
 </ul>
 {% endfor %}

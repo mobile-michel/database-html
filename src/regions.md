@@ -2,8 +2,9 @@
 title: ARIA example
 description: page regions in page structure tutorial
 link: https://www.w3.org/WAI/tutorials/page-structure/regions/
-layout: base
+layout: default
 tags: primary
+date: 2024-01-06
 ---
 `<body>`
 - `<header role="banner">` -> Banner

@@ -1,9 +1,10 @@
 ---
-title: Sectioning elements
-description: ARIA landmarks & other HTML sectioning elements
+title: Sectionning
+description: HTML sectioning elements & ARIA landmarks
 link: https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/HTML5.html
-layout: base
+layout: default
 tags: primary
+date: 2024-01-04
 ---
 
 ## With ARIA landmarks

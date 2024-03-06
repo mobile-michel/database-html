@@ -1,9 +1,9 @@
 ---
-title: Simple.css
+title: All elements
 description: Periodic Table of HTML Elements
-layout: base
+layout: default
 tags: primary
-date: 2023-10-27
+date: 2024-01-10
 ---
 
 {% assign list = html | map: 'category' | uniq %}
@@ -12,9 +12,7 @@ date: 2023-10-27
 {% assign elements = html | where: "category", item | sort: 'name' %}
 <ul>
 {% for item in elements %}
-    {% if item.simple %}
     <li><strong>{{item.name}}</strong> : {{item.description}}<br>example: <code>{{item.example | escape }}</code></li>
-{% endif %}
 {% endfor %}
 </ul>
 {% endfor %}

@@ -2,8 +2,9 @@
 title: Structure
 description: MDN Document and website structure, semantic tags
 link: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
-layout: base
+layout: default
 tags: primary
+date: 2024-01-08
 ---
 
 ## Document and website structure

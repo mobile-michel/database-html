@@ -1,27 +1,15 @@
 ---
 title: Categories
-description: MDN Content Categories
-link: https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories
-layout: base
+description: Categories of all HTML elements
+layout: default
 tags: primary
+date: 2024-01-02
 ---
-
-## Main Content Categories
-- metadata content: inside `<head>`
-- flow content: inside `<body>`
-- sectioning content: `<article> <aside> <nav> <section>`
-- heading content: `<h1> to <h6>`
-- phrasing content: `<code> <label> <mark>`, etc...
-- embedded content: `<audio> <img> <object>`, etc...
-- interactive content: `<a> <button> <details>`, etc...
-- palpable content
-- form content: `<input> <label> <select>`, etc...
-
-## Secondary Categories
-- script elements: `<script> <template>`
-
-## Transparent content model
-- `<del> <ins>`
-
-## Other Content Models
-- sectioning root
+- **sectioning** (document sections): `body, address, article, aside, footer, header, h1-h6, main, nav, section`;
+- **text-content** (grouping content): `blockquote, br, dd, dialog, div, dl, dt, figcaption, figure, hr, li, ol, p, pre, ul`;
+- **text-semantics** (text-level semantics): `a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr`;
+- **media** (image & multimedia): `img, area, map, svg, canvas, audio, source, video, track, picture`;
+- **embedded** (embedding content): `embed, object, param, source`;
+- **table** (tabular content): `caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr`;
+- **forms**: `button, datalist, fieldset, form, input, keygen, label, legend, meter, optgroup, option, output, progress, select`;
+- **interactive** (interactive elements): `details, menu, summary`.

@@ -1,18 +1,12 @@
 ---
-title: HTML Elements
-description: Periodic Table of HTML Elements
-layout: base
-tags: primary
-date: 2024-01-01
+title: Home
+description: Main page for HTML elements
+layout: default
 ---
-
-{% assign list = html | map: 'category' | uniq %}
-{% for item in list %}
-<h2>{{item | capitalize }}</h2>
-{% assign elements = html | where: "category", item | sort: 'name' %}
 <ul>
-{% for item in elements %}
-    <li><strong>{{item.name}}</strong> : {{item.description}}<br>example: <code>{{item.example | escape }}</code></li>
-{% endfor %}
+    {% for nav in collections.primary %}
+    <li {% if page.url==nav.url %}class="current" {% endif %}>
+        <a href="{{ nav.url }}">{{ nav.data.title }}</a>: {{ nav.data.description }}
+    </li>
+    {% endfor %}
 </ul>
-{% endfor %}
